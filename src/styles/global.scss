@@ -22,3 +22,109 @@
   --error: #c34143;
   --white: #fff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gabarito";
+  // src: url(/Assets/Fonts/gabarito/webfonts/Gabarito-Black.woff2) format("woff2");
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Black.woff2) format("woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Gabarito";
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gabarito";
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-ExtraBold.woff2)
+    format("woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gabarito";
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Medium.woff2)
+    format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gabarito";
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Regular.woff2)
+    format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gabarito";
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-SemiBold.woff2)
+    format("woff2");
+  font-weight: 600;
+}
+
+:root {
+  --body-secondary: #ffffff;
+  --bg-body: #ecf1f3;
+  --text-header: #ffffff;
+  --white: #fff;
+  --black: #000000;
+  --bg-header: #012585;
+  --bg-active-tab: #c00000;
+  --gray: #808080;
+  --light-gray: hsl(0, 0%, 50%, 50%);
+  --card-active: #2e75b5;
+  --bg-previous: #828282;
+
+
+  --primary: #5f5fff;
+  --secondary: #fde9ec;
+  --text-primary: #272939;
+  --text-secondary: #9d9ea8;
+  --text-ternary: #bdbec4;
+  --time-starts-in: #ef233c;
+  --text-starts-in-dim: #f46c7c;
+  --game-tab: #fde9ec;
+  --bg-body: #ecf1f3;
+  --white: #fff;
+  --caution: #ffc600;
+  --match-report-players-bg: #eaeaec;
+  --completed-btn: #c1fe78;
+  --short-summary: #a1ffb1;
+  --mega-contest-head: #717280;
+  --bg-header: #012585;
+}
+
+body {
+  background-color: var(--bg-body);
+  font-family: "Gabarito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.background-secondary {
+  background-color: var(--body-secondary);
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 450px !important;
+}
+
+p {
+  margin: 0;
+}
+
+.app-content {
+  padding-bottom: 66px !important;
+  padding-top: 90px!important;
+}
+
+.pt-150{
+    padding-top: 150px!important;
+}

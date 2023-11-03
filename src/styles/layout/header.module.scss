@@ -1,8 +1,41 @@
-.header {
-  max-width: 992px;
-  margin: auto;
+// .header {
+//   max-width: 992px;
+//   margin: auto;
 
-  .inner {
-    padding-block: 10px;
-  }
+//   .inner {
+//     padding-block: 10px;
+//   }
+// }
+
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid red;
+}
+
+.header_top,
+.header_bottom {
+max-width: 100%;
+background-color: var(--bg-header);
+color: var(--white);
+border: 1px solid green;
+background-color: red;
+}
+
+.header-text-size {
+font-size: 18px;
+font-weight: 700;
+}
+
+.site-logo {
+width: 81px;
+}
+
+.header-tab-new {
+font-size: 16px;
+font-weight: 700;
 }
