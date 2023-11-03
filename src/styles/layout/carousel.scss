@@ -1,0 +1,17 @@
+
+#home_slider .slick-prev:before,
+#home_slider .slick-next:before,
+#home_slider .slick-arrow {
+  display: none !important;
+}
+
+.slider {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .slick-slide {
+    max-width: 313px;
+    margin: 0 6px;
+    border-radius: 10px;
+  }

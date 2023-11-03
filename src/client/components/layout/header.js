@@ -11,7 +11,7 @@ export const Header = () => {
         <div className="site-logo-container p-1">
           <img
             className={style.site_logo}
-            src="../Images/dream-logo-blue.jpg"
+            src="../images/dream-logo-blue.jpg"
             alt=""
           />
         </div>
