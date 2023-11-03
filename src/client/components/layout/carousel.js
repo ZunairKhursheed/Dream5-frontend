@@ -3,6 +3,7 @@ import React from "react";
 import style from "@/styles/layout/carousel.scss"
 
 
+
 export const Teamcarousel = () => {
   return (
 
