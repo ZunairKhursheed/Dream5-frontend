@@ -1,3 +1,10 @@
+import { Header } from "@/client/components/layout/header";
+
 export default function Home() {
-  return <main>Home</main>;
+  return (
+    <main>
+      <Header />
+      Home
+    </main>
+  );
 }
