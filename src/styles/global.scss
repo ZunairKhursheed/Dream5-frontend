@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap";
 * {
   margin: 0;
   padding: 0;
@@ -31,12 +32,14 @@
 @font-face {
   font-family: "Gabarito";
   // src: url(/Assets/Fonts/gabarito/webfonts/Gabarito-Black.woff2) format("woff2");
-  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Black.woff2) format("woff2");
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Black.woff2)
+    format("woff2");
   font-weight: 900;
 }
 @font-face {
   font-family: "Gabarito";
-  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Bold.woff2) format("woff2");
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Bold.woff2)
+    format("woff2");
   font-weight: 700;
 }
 @font-face {
@@ -76,7 +79,6 @@
   --light-gray: hsl(0, 0%, 50%, 50%);
   --card-active: #2e75b5;
   --bg-previous: #828282;
-
 
   --primary: #5f5fff;
   --secondary: #fde9ec;
@@ -122,9 +124,9 @@ p {
 
 .app-content {
   padding-bottom: 66px !important;
-  padding-top: 90px!important;
+  padding-top: 90px !important;
 }
 
-.pt-150{
-    padding-top: 150px!important;
+.pt-150 {
+  padding-top: 150px !important;
 }
