@@ -1,36 +1,26 @@
 "use client";
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import style from "@/styles/layout/carousel.module.scss";
 
 export const Teamcarousel = () => {
   const settings = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // centerMode: true,
-    variableWidth: true,
+    centerMode: true,
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
+    variableWidth: true,
   };
   return (
     <div className="main_content">
       <div className="container overflow-hidden">
-        <Slider {...settings} id="home_slider">
-          <div>
-            <img src="/images/team-pic.png" className="c-img" alt="" />
-          </div>
-
-          <div>
-            <img src="/images/team-pic.png" className="c-img" alt="" />
-          </div>
-
-          <div className="team-pic">
-            <img src="/images/team-pic.png" className="c-img" alt="" />
-          </div>
+        <Slider {...settings} className="home_slider">
+          {[1, 2, 3, 4, 5].map((data) => (
+            <div key={data + "homeSlider"} className="home_slider-img">
+              <img src="/images/team-pic.png" alt="" />
+            </div>
+          ))}
         </Slider>
       </div>
     </div>

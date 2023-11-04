@@ -148,15 +148,17 @@ a {
 .slick-next {
   display: none !important;
 }
-
-.c-img {
-  margin: 15px 50px 0 50px;
+.home_slider-img {
+  padding-inline: 2%;
+  img {
+    width: 100%;
+  }
 }
 
-.c-img {
-  margin: 15px 50px 0 50px;
+.home_slider.slick-slider .slick-track,
+.home_slider.slick-slider .slick-list {
+  max-height: 100px;
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -204,7 +206,6 @@ a {
 
 .slick-slide {
   max-width: 313px;
-  margin: 0 6px;
   border-radius: 10px;
 }
 

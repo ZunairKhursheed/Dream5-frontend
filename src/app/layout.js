@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 // import "@/styles/layout.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "@/styles/global.scss";
 import Link from "next/link";
 
