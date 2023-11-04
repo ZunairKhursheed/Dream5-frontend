@@ -5,7 +5,6 @@ import { Teamcarousel } from "@/client/components/layout/carousel";
 import { Upcoming } from "@/client/components/layout/upcoming";
 import { Vscard } from "@/client/components/cards/vsCards";
 import { VscardNoAdd } from "@/client/components/cards/vsCardNoAdd";
-// import "@/styles/global.scss";
 
 export default function Home() {
   return (

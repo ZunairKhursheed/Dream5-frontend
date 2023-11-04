@@ -1,0 +1,64 @@
+.questions {
+    gap: 10px;
+  }
+  
+  .question-no {
+    width: 50px;
+    height: 50px;
+    border: 3px solid gray;
+    background-color: var(--black);
+    border-radius: 50%;
+    padding-top: 2px;
+  }
+  
+  .question-digit {
+    padding: 10px;
+  }
+  .player-card,
+.country-card {
+  box-shadow: 2px 2px 2px 2px hsl(0, 0%, 0%, 0.2);
+  margin-bottom: 20px;
+  background-color: var(--white);
+}
+
+.player-card.active {
+  background-color: var(--card-active);
+}
+
+.player-img img {
+  width: 60px;
+  margin-top: -10px;
+}
+
+.player-detail {
+  gap: 5px;
+}
+
+.player-name {
+  padding-bottom: 8px;
+}
+
+.performance {
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.performance-bar {
+  width: 130px;
+  height: 5px;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.progress-movement {
+  width: 10px;
+  height: 5px;
+  background-color: var(--gray);
+  border-radius: 10px;
+}
+
+.flag-img img {
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+}

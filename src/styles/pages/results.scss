@@ -1,0 +1,87 @@
+.pick-main {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--white);
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 2px 0 gray;
+  }
+  
+  .pick-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--bg-header);
+    padding: 5px 0 5px 10px;
+    color: var(--white);
+  }
+  
+  .winner-announcement {
+    gap: 10px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+  }
+  
+  .short-summary {
+    gap: 25px;
+  }
+  
+  .batsman img,
+  .bowler img {
+    width: 40px;
+  }
+  
+  .batsman-name,
+  .bowler-name {
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 2px 1px gray;
+    width: 50px;
+  }
+  
+  .top-scorer,
+  .top-bowler {
+    gap: 20px;
+  }
+  
+  .vertical-line {
+    height: 50px;
+    border-left: 2px solid lightgrey;
+  }
+
+  .btn-make-your-picks {
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--bg-header);
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 200px;
+  }
+
+  @media (max-width: 300px){
+    .contest-result {
+      font-size: 12px;
+    }
+    .top-scrorer-label,
+  .top-bowler-label {
+    font-size: 10px;
+  }
+  .short-summary {
+    gap: 10px;
+  }
+  .batsman img,
+  .bowler img {
+    width: 25px;
+  }
+  .who-is-winner {
+    font-size: 10px;
+  }
+  .who-will-win {
+    font-size: 12px;
+  }
+  .top-scorer,
+  .top-bowler {
+    gap: 5px;
+  }
+  .who-will-win {
+    font-size: 12px;
+  }
+  }
