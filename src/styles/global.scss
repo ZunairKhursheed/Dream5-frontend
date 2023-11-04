@@ -253,6 +253,14 @@ a {
   background-color: var(--body-secondary);
 }
 
+// carousel
+.home_slider.slick-slider {
+  height: 100px;
+}
+.home_slider.slick-slider .slick-slide > div {
+  padding: 0 5px;
+}
+
 @media (max-width: 300px) {
   .container {
     padding: 0 8px;

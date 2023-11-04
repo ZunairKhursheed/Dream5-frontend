@@ -1,20 +1,20 @@
 .questions {
-    gap: 10px;
-  }
-  
-  .question-no {
-    width: 50px;
-    height: 50px;
-    border: 3px solid gray;
-    background-color: var(--black);
-    border-radius: 50%;
-    padding-top: 2px;
-  }
-  
-  .question-digit {
-    padding: 10px;
-  }
-  .player-card,
+  gap: 10px;
+}
+
+.question-no {
+  width: 50px;
+  height: 50px;
+  border: 3px solid gray;
+  background-color: var(--black);
+  border-radius: 50%;
+  padding-top: 2px;
+}
+
+.question-digit {
+  padding: 10px;
+}
+.player-card,
 .country-card {
   box-shadow: 2px 2px 2px 2px hsl(0, 0%, 0%, 0.2);
   margin-bottom: 20px;
@@ -61,4 +61,50 @@
   width: 70px;
   height: 50px;
   border-radius: 5px;
+}
+// second card
+.second__app__content {
+  padding-top: 0px !important;
+}
+.header-bottom {
+  border-left: 1px solid var(--white);
+  background-color: var(--bg-header);
+  margin-top: 24px;
+}
+
+.header-tab,
+.header-tab-new {
+  border-top: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  padding-block: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.header-tab.active,
+.header-tab-new.active {
+  background-color: var(--bg-active-tab);
+}
+.previous-next {
+  gap: 10px;
+}
+.btn,
+.btn-previous,
+.btn-next {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn,
+.btn-next {
+  background-color: var(--bg-header);
+  padding: 5px 35px;
+}
+.btn,
+.btn-previous {
+  background-color: var(--bg-previous);
+  padding: 5px 15px;
 }

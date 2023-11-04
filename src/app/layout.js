@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
             <div class="footer-top">
               <div class="row d-flex">
                 <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
-                  <a
-                    href=""
+                  <Link
+                    href="/"
                     class="d-flex flex-column align-items-center footer-link"
                   >
                     <img
@@ -28,11 +28,11 @@ export default function RootLayout({ children }) {
                       alt=""
                     />
                     <p class="footer-btn-text">Home</p>
-                  </a>
+                  </Link>
                 </div>
                 <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
                   <a
-                    href=""
+                    href="/review"
                     class="d-flex flex-column align-items-center footer-link"
                   >
                     <img
@@ -44,8 +44,8 @@ export default function RootLayout({ children }) {
                   </a>
                 </div>
                 <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
-                  <a
-                    href=""
+                  <Link
+                    href="/questionier"
                     class="d-flex flex-column align-items-center footer-link"
                   >
                     <img
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
                       alt=""
                     />
                     <p class="footer-btn-text">Refer & Earn</p>
-                  </a>
+                  </Link>
                 </div>
                 <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
                   <Link
