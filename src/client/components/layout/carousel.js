@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -21,7 +22,7 @@ export const Teamcarousel = () => {
 
     <div className="main_content">
     <div className="container overflow-hidden">
-      <Slider {...settings} id="home_slider">
+      <Slider id="home_slider">
             <div className={style.slick_slide}>
              <div>
                 <img src="../Images/team-pic.png" alt="" />

@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "@/styles/layout.css";
+// import "@/styles/layout.css";
 import "@/styles/global.scss";
 
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
                 class="d-flex flex-column align-items-center footer-link"
               >
                 <img
-                  // src="./Assets/Icons/Home 1.png"
+                  src="../Icons/Home 1.png"
                   class="footer-btn-icon"
                   alt=""
                 />
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
                 class="d-flex flex-column align-items-center footer-link"
               >
                 <img
-                  src="./Assets/Icons/My Matches.png"
+                  src="../Icons/My Matches.png"
                   class="footer-btn-icon-1"
                   alt=""
                 />
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
                 class="d-flex flex-column align-items-center footer-link"
               >
                 <img
-                  src="./Assets/Icons/people.png"
+                  src="../Icons/people.png"
                   class="footer-btn-icon"
                   alt=""
                 />
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
                 class="d-flex flex-column align-items-center footer-link"
               >
                 <img
-                  src="./Assets/Icons/Profile.png"
+                  src="../Icons/Profile.png"
                   class="footer-btn-icon"
                   alt=""
                 />
