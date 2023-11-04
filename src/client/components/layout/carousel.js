@@ -20,21 +20,17 @@ export const Teamcarousel = () => {
     <div className="main_content">
       <div className="container overflow-hidden">
         <Slider {...settings} id="home_slider">
-          {/* <div className={style.slick_slide}> */}
           <div>
             <img src="/images/team-pic.png" className="c-img" alt="" />
           </div>
-          {/* </div> */}
-          {/* <div className={style.slick_slide}> */}
+
           <div>
             <img src="/images/team-pic.png" className="c-img" alt="" />
           </div>
-          {/* </div> */}
-          {/* <div className={style.slick_slide}> */}
+
           <div className="team-pic">
             <img src="/images/team-pic.png" className="c-img" alt="" />
           </div>
-          {/* </div> */}
         </Slider>
       </div>
     </div>

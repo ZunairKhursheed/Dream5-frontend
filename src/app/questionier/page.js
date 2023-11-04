@@ -11,7 +11,7 @@ export default function Questionier() {
   return (
     <main>
       <HeaderSecond />
-      <div class="app-content">
+      <div className="app-content">
         <HeaderQuestionier />
         {activeQuestioin == 1 ? (
           <QuestionierCards setActiveQuestion={setActiveQuestion} />
