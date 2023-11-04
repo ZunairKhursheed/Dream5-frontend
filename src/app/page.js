@@ -1,3 +1,4 @@
+"use client";
 import { Header } from "@/client/components/layout/header";
 import { Topbanner } from "@/client/components/topbanner";
 import { Teamcarousel } from "@/client/components/layout/carousel";
