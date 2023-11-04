@@ -20,7 +20,7 @@ export const Pick = () => {
       <div className="short-summery-conainer py-2">
         <div className="winner-announcement d-flex justify-content-center align-items-center mx-4">
           <p className="winner-label">Match Winner:</p>
-          <img src="../Images/india.png" alt="" />
+          <img src="/images/india.png" alt="" />
           <p className="winning-team">INDIA</p>
         </div>
         <div className="short-summary d-flex justify-content-center">
@@ -28,11 +28,11 @@ export const Pick = () => {
             <p className="top-scrorer-label text-center py-2">Top Runs Scorer</p>
             <div className="top-scorer d-flex">
               <div className="batsman">
-                <img src="../Images/rohit-removebg-preview.png" alt="" />
+                <img src="/images/rohit-removebg-preview.png" alt="" />
                 <div className="batsman-name">R. Sharma</div>
               </div>
               <div className="batsman">
-                <img src="../Images/rohit-removebg-preview.png" alt="" />
+                <img src="/images/rohit-removebg-preview.png" alt="" />
                 <div className="batsman-name">V. Kohli</div>
               </div>
             </div>
@@ -42,11 +42,11 @@ export const Pick = () => {
             <p className="top-bowler-label text-center py-2">Top Wickets taker</p>
             <div className="top-bowler d-flex">
               <div className="bowler">
-                <img src="../Images/rohit-removebg-preview.png" alt="" />
+                <img src="/images/rohit-removebg-preview.png" alt="" />
                 <div className="bowler-name">R. Sharma</div>
               </div>
               <div className="bowler">
-                <img src="../Images/rohit-removebg-preview.png" alt="" />
+                <img src="/images/rohit-removebg-preview.png" alt="" />
                 <div className="bowler-name">V. Kohli</div>
               </div>
             </div>

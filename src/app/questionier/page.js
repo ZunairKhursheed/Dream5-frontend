@@ -10,7 +10,7 @@ export default function Questionier() {
   return (
     <main>
       <HeaderSecond />
-      <div class="app-content">
+      <div className="app-content">
       <HeaderQuestionier />
       <QuestionierCards />
       </div>

@@ -17,7 +17,7 @@ export const QuestionierCards = () => {
       className="country-card d-flex align-items-center justify-content-center p-2 "
     >
       <div className="flag-img col-3">
-        <img src="../Images/india.png" alt="" />
+        <img src="/images/india.png" alt="" />
       </div>
       <div className="player-details col-9 px-3">
         <p className="player-name mb-0">INDIA</p>
@@ -36,7 +36,7 @@ export const QuestionierCards = () => {
       className="country-card d-flex align-items-center justify-content-center p-2"
     >
       <div className="flag-img col-3">
-        <img src="../Images/austrailia.png" alt="" />
+        <img src="/images/austrailia.png" alt="" />
       </div>
       <div className="player-details col-9 px-3">
         <p className="player-name mb-0">AUSTRAILIA</p>

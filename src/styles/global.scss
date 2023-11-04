@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -34,14 +35,12 @@
 @font-face {
   font-family: "Gabarito";
   // src: url(/Assets/Fonts/gabarito/webfonts/Gabarito-Black.woff2) format("woff2");
-  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Black.woff2)
-    format("woff2");
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Black.woff2) format("woff2");
   font-weight: 900;
 }
 @font-face {
   font-family: "Gabarito";
-  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Bold.woff2)
-    format("woff2");
+  src: url(../../public/Fonts/gabarito/webfonts/Gabarito-Bold.woff2) format("woff2");
   font-weight: 700;
 }
 @font-face {
@@ -81,6 +80,7 @@
   --light-gray: hsl(0, 0%, 50%, 50%);
   --card-active: #2e75b5;
   --bg-previous: #828282;
+
 
   --primary: #5f5fff;
   --secondary: #fde9ec;
@@ -124,37 +124,49 @@ p {
   margin: 0;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
 .app-content {
   padding-bottom: 66px !important;
-  padding-top: 90px !important;
+  padding-top: 90px!important;
 }
 
-.pt-150 {
-  padding-top: 150px !important;
+.pt-150{
+    padding-top: 150px!important;
 }
 
-#home_slider .slick-prev:before,
-#home_slider .slick-next:before,
-#home_slider .slick-arrow {
+// #home_slider .slick-prev:before,
+// #home_slider .slick-next:before,
+// #home_slider .slick-arrow {
+//   display: none !important;
+// }
+
+.slick-arrow,
+.slick-prev,
+.slick-next{
   display: none !important;
 }
 
-.header {
+
+.c-img{
+  margin: 15px 50px 0 50px;
+}
+
+.header{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 
 .header_top,
 .header_bottom {
-  max-width: 100%;
-  background-color: var(--bg-header);
-  color: var(--white);
+max-width: 100%;
+background-color: var(--bg-header);
+color: var(--white);
 }
 
 .header_bottom {
@@ -169,7 +181,7 @@ a {
   font-weight: 600;
 }
 
-.hbResults {
+.hbResults{
   padding-top: 64px;
 }
 
@@ -183,146 +195,152 @@ a {
 }
 
 .slider {
-  width: 100%;
-  margin-top: 15px;
-}
-
-.slick-slide {
-  max-width: 313px;
-  margin: 0 6px;
-  border-radius: 10px;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.footer-top {
-  background-color: var(--bg-header);
-}
-
-.footer-element {
-  padding-block: 5px;
-  gap: 8px;
-}
-
-.footer-element a {
-  color: var(--text-secondary);
-  gap: 5px;
-}
-
-.footer-btn-icon {
-  width: 24px;
-  height: 24px;
-  filter: grayscale(100%);
-}
-
-.footer-btn-icon-1 {
-  width: 31px;
-  height: 20px;
-  margin-top: 4px;
-}
-
-.footer-btn-text {
-  font-family: "Gabarito", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14.4px;
-  margin-bottom: 0;
-  color: var(--white);
-}
-
-.footer-link:hover .footer-btn-text {
-  color: white;
-}
-
-.footer-link:hover .footer-btn-icon {
-  transform: scale(1.2);
-}
-
-.footer-link:hover .footer-btn-icon-1 {
-  transform: scale(1.2);
-}
-
-.background-secondary {
-  background-color: var(--body-secondary);
-}
-
-@media (max-width: 300px) {
-  .container {
-    padding: 0 8px;
+    width: 100%;
+    margin-top: 15px;
   }
-  .team-short-name {
-    display: none;
+
+  .slick-slide {
+    max-width: 313px;
+    margin: 0 6px;
+    border-radius: 10px;
   }
-  .caution {
-    font-size: 10.5px;
-    gap: 0;
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  .match-report-head {
-    gap: 5px;
+  
+  .footer-top {
+    background-color: var(--bg-header);
   }
-  .user-name {
-    font-size: 10px;
-    text-align: center;
-    line-height: 15px;
-  }
-  .winner {
-    font-size: 12px;
-    text-align: center;
-    line-height: 15px;
-  }
+  
   .footer-element {
-    gap: 2px;
-    padding: 10px 0;
+    padding-block: 5px;
+    gap: 8px;
   }
-  .footer-btn-text {
-    font-size: 10px;
-  }
-  .row {
-    padding: 0;
-    margin: 0;
-  }
-  .playing-teams-container {
-    gap: 6px;
-  }
-  .playing-team {
-    padding: 8px 12px;
-  }
-  .player-name-text {
-    font-size: 12px;
-  }
-  .down-arrow-container img {
-    width: 20px;
-    height: 20px;
-  }
-  .vs {
-    padding: 0 10px 10px 10px;
-  }
-  .status {
-    font-size: 10px;
-    padding: 5px 5px;
-  }
-  .total-score {
-    font-size: 10px;
-  }
-  .best-score {
-    font-size: 10px;
-  }
-  .best-bowling {
-    font-size: 10px;
-  }
-  .score-summary {
+  
+  .footer-element a {
+    color: var(--text-secondary);
     gap: 5px;
   }
-  .btn-contests,
-  .btn-predictions,
-  .btn-scorecard {
-    font-size: 10px;
+  
+  .footer-btn-icon {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
   }
-}
+  
+  .footer-btn-icon-1 {
+    width: 31px;
+    height: 20px;
+    margin-top: 4px;
+  }
+  
+  .footer-btn-text {
+    font-family: "Gabarito", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 0;
+    color: var(--white);
+  }
+  
+  .footer-link:hover .footer-btn-text {
+    color: white;
+  }
+  
+  .footer-link:hover .footer-btn-icon{
+    transform: scale(1.2);
+  }
+  
+  .footer-link:hover .footer-btn-icon-1{
+    transform: scale(1.2);
+  }
+
+  .background-secondary {
+    background-color: var(--body-secondary);
+  }
+
+ 
+
+
+
+  @media (max-width: 300px) {
+    .container {
+      padding: 0 8px;
+    }
+    .team-short-name {
+      display: none;
+    }
+    .caution {
+      font-size: 10.5px;
+      gap: 0;
+    }
+    .match-report-head {
+      gap: 5px;
+    }
+    .user-name {
+      font-size: 10px;
+      text-align: center;
+      line-height: 15px;
+    }
+    .winner {
+      font-size: 12px;
+      text-align: center;
+      line-height: 15px;
+    }
+    .footer-element {
+      gap: 2px;
+      padding: 10px 0;
+    }
+    .footer-btn-text {
+      font-size: 10px;
+    }
+    .row {
+      padding: 0;
+      margin: 0;
+    }
+    .playing-teams-container {
+      gap: 6px;
+    }
+    .playing-team {
+      padding: 8px 12px;
+    }
+    .player-name-text {
+      font-size: 12px;
+    }
+    .down-arrow-container img {
+      width: 20px;
+      height: 20px;
+    }
+    .vs {
+      padding: 0 10px 10px 10px;
+    }
+    .status {
+      font-size: 10px;
+      padding: 5px 5px;
+    }
+    .total-score {
+      font-size: 10px;
+    }
+    .best-score {
+      font-size: 10px;
+    }
+    .best-bowling {
+      font-size: 10px;
+    }
+    .score-summary {
+      gap: 5px;
+    }
+    .btn-contests,
+    .btn-predictions,
+    .btn-scorecard {
+      font-size: 10px;
+    }
+
+  }
+

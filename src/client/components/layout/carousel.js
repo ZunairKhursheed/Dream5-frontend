@@ -10,32 +10,36 @@ export const Teamcarousel = () => {
   var settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
+    // centerMode: true,
     variableWidth: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    infinite: true,
   };
   return (
     <div className="main_content">
       <div className="container overflow-hidden">
-        <Slider id="home_slider" {...settings}>
-          <div className={style.slick_slide}>
+        <Slider {...settings} id="home_slider">
+          {/* <div className={style.slick_slide}> */}
             <div>
-              <img src="/images/team-pic.png" alt="" />
+              <img src="/images/team-pic.png" className="c-img" alt="" />
             </div>
-          </div>
-          <div className={style.slick_slide}>
+          {/* </div> */}
+          {/* <div className={style.slick_slide}> */}
             <div>
-              <img src="/images/team-pic.png" alt="" />
+              <img src="/images/team-pic.png" className="c-img" alt="" />
             </div>
-          </div>
-          <div className={style.slick_slide}>
+          {/* </div> */}
+          {/* <div className={style.slick_slide}> */}
             <div className="team-pic">
-              <img src="/images/team-pic.png" alt="" />
+              <img src="/images/team-pic.png" className="c-img" alt="" />
             </div>
-          </div>
+          {/* </div> */}
         </Slider>
       </div>
     </div>
+
+
+
   );
 };
