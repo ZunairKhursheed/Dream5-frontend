@@ -1,0 +1,61 @@
+.match-card {
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+  }
+  
+  .match-card-heading {
+    color: var(--text-ternary);
+    font-family: "Gabarito", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  
+  .vs {
+    padding: 0 30px 5px 30px;
+  }
+  
+  .card-team-name {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .start-in {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .time-left {
+    color: var(--time-starts-in);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .add {
+    padding-block: 1px;
+    background: linear-gradient(to bottom, #ffc600, #ff9933);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .add-txt {
+    color: var(--white);
+    font-size: 12px;
+  }
+  
+  .win {
+    font-size: 12px;
+  }
+  
+  /* .cash {
+    font-size: 16px;
+  } */
+  .add-img {
+    width: 100%;
+    max-height: 34px;
+    object-fit: contain;
+  }

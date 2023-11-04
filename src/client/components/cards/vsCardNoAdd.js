@@ -3,7 +3,7 @@ import React from "react";
 import style from "@/styles/vscard.scss"
 
 
-export const Vscard = () => {
+export const VscardNoAdd = () => {
   return (
     <div className="container">
       <div className="match-card">
@@ -26,7 +26,7 @@ export const Vscard = () => {
             <p className="card-team-name">Afghanistan</p>
           </div>
         </div>
-        <div className="add">
+        {/* <div className="add">
           <div className="d-flex flex-row align-items-center">
             <div className="col">
               <p className="add-txt win">Win Guaranteed</p>
@@ -38,7 +38,7 @@ export const Vscard = () => {
               <p className="add-txt cash">+ Cash for Free</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
     
