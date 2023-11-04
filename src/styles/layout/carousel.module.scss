@@ -7,10 +7,11 @@
 
 .slider {
     width: 100%;
-    margin-top: 15px;
+    // margin-top: 15px;
+    border: 1px solid red;
   }
 
-  .slick-slide {
+  .slick_slide {
     max-width: 313px;
     margin: 0 6px;
     border-radius: 10px;
