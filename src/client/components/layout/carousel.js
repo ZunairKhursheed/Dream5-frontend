@@ -8,22 +8,13 @@ import style from "@/styles/layout/carousel.module.scss";
 
 export const Teamcarousel = () => {
   const settings = {
-    // slidesToShow: 2,
-    // // slidesToScroll: 1,
-    // centerMode: true,
-    // variableWidth: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    // infinite: true,
-    // speed: 500,
-    className: "center",
-    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 1.2,
-    slidesToScroll: 1.2,
+    autoplaySpeed: 2000,
+    centerMode: true,
     variableWidth: true,
-    speed: 500,
   };
   return (
     <div className="main_content">

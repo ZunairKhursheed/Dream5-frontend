@@ -260,7 +260,18 @@ a {
 .home_slider.slick-slider .slick-slide > div {
   padding: 0 5px;
 }
-
+.home_slider.slick-slider .slick-slide {
+  /* box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.2); */
+  max-width: 313px;
+  /* height: 90px; */
+  margin: 0 6px;
+  border-radius: 10px;
+}
+.home_slider.slick-slider .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 300px) {
   .container {
     padding: 0 8px;
