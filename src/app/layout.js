@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 // import "@/styles/layout.css";
 import "@/styles/global.scss";
+import Link from "next/link";
 
 export const metadata = {
   title: "Create Next App",
@@ -56,8 +57,8 @@ export default function RootLayout({ children }) {
                   </a>
                 </div>
                 <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
-                  <a
-                    href=""
+                  <Link
+                    href="/results"
                     class="d-flex flex-column align-items-center footer-link"
                   >
                     <img
@@ -66,7 +67,7 @@ export default function RootLayout({ children }) {
                       alt=""
                     />
                     <p class="footer-btn-text">Profile</p>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div class="footer-bottom">
