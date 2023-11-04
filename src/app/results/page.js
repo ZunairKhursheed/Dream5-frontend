@@ -13,7 +13,7 @@ export default function Results() {
     <HeaderSecond >
       <HeaderBottomResults/>
     </HeaderSecond>
-    <div class="app-content pt-150">
+    <div className="app-content pt-150">
        <Pick />
        <Pick />
        <Pickbtn />

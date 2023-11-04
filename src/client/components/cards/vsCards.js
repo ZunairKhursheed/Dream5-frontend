@@ -12,7 +12,7 @@ export const Vscard = () => {
         </p>
         <div className="vs d-flex justify-content-between align-items-center">
           <div className="team">
-            <img src="../Images/india.png" alt="" />
+            <img src="/images/india.png" alt="" />
             <p className="card-team-name">India</p>
           </div>
           <div className="time">
@@ -22,7 +22,7 @@ export const Vscard = () => {
             </p>
           </div>
           <div className="team">
-            <img src="../Images/Afghanistan.png" alt="" />
+            <img src="/images/Afghanistan.png" alt="" />
             <p className="card-team-name">Afghanistan</p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export const Vscard = () => {
               <p className="add-txt win">Win Guaranteed</p>
             </div>
             <div className="col-1">
-              <img className="add-img" src="../Images/Iphone15.png" alt="" />
+              <img className="add-img" src="/images/Iphone15.png" alt="" />
             </div>
             <div className="col">
               <p className="add-txt cash">+ Cash for Free</p>

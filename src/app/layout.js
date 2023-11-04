@@ -13,66 +13,66 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
-        <div class="container">
-          <footer class="footer container p-0 d-flex flex-column">
-            <div class="footer-top">
-              <div class="row d-flex">
-                <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
+        <div className="container">
+          <footer className="footer container p-0 d-flex flex-column">
+            <div className="footer-top">
+              <div className="row d-flex">
+                <div className="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
                   <Link
                     href="/"
-                    class="d-flex flex-column align-items-center footer-link"
+                    className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="../Icons/Home 1.png"
-                      class="footer-btn-icon"
+                      src="/icons/Home 1.png"
+                      className="footer-btn-icon"
                       alt=""
                     />
-                    <p class="footer-btn-text">Home</p>
+                    <p className="footer-btn-text">Home</p>
                   </Link>
                 </div>
-                <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
-                  <a
-                    href="/review"
-                    class="d-flex flex-column align-items-center footer-link"
-                  >
-                    <img
-                      src="../Icons/My Matches.png"
-                      class="footer-btn-icon-1"
-                      alt=""
-                    />
-                    <p class="footer-btn-text">My Matches</p>
-                  </a>
-                </div>
-                <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
+                <div className="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
                   <Link
                     href="/questionier"
-                    class="d-flex flex-column align-items-center footer-link"
+                    className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="../Icons/people.png"
-                      class="footer-btn-icon"
+                      src="/icons/My Matches.png"
+                      className="footer-btn-icon-1"
                       alt=""
                     />
-                    <p class="footer-btn-text">Refer & Earn</p>
+                    <p className="footer-btn-text">My Matches</p>
                   </Link>
                 </div>
-                <div class="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
+                <div className="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
                   <Link
-                    href="/results"
-                    class="d-flex flex-column align-items-center footer-link"
+                    href="/review"
+                    className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="../Icons/Profile.png"
-                      class="footer-btn-icon"
+                      src="/icons/people.png"
+                      className="footer-btn-icon"
                       alt=""
                     />
-                    <p class="footer-btn-text">Profile</p>
+                    <p className="footer-btn-text">Refer & Earn</p>
+                  </Link>
+                </div>
+                <div className="footer-element col-3 d-flex flex-column align-items-center justify-content-center">
+                  <Link
+                    href="/results"
+                    className="d-flex flex-column align-items-center footer-link"
+                  >
+                    <img
+                      src="/icons/Profile.png"
+                      className="footer-btn-icon"
+                      alt=""
+                    />
+                    <p className="footer-btn-text">Profile</p>
                   </Link>
                 </div>
               </div>
-              <div class="footer-bottom">
-                <div class="row">
-                  <div class="copy-right col-12"></div>
+              <div className="footer-bottom">
+                <div className="row">
+                  <div className="copy-right col-12"></div>
                 </div>
               </div>
             </div>

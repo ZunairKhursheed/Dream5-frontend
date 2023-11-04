@@ -9,7 +9,7 @@ export default function Review() {
   return (
     <main>
       <HeaderSecond />
-      <div class="app-content">
+      <div className="app-content">
        <ReviewSelection />
        <EditSaveBtns />
       </div>

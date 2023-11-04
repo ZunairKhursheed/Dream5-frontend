@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div class="app-content">
+      <div className="app-content">
         <Topbanner />
         <Teamcarousel />
         <Upcoming />
