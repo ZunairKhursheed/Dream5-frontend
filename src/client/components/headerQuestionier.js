@@ -1,22 +1,6 @@
 import { useMemo } from "react";
 
-export const HeaderQuestionier = ({ questionArray, activeQuestion }) => {
-  const question = useMemo(() => {
-    switch (activeQuestion) {
-      case 1:
-        return `Who will Win Match`;
-      case 2:
-        return `${questionArray[0]["name"]} Player of the match`;
-      case 3:
-        return `${questionArray[0]["name"]} Lead Run Scorer`;
-      case 4:
-        return `${questionArray[0]["name"]} Lead wicket taker`;
-      case 5:
-        return `Most Sixes of the ${questionArray[0]["name"]}'s Player`;
-      default:
-        break;
-    }
-  }, [activeQuestion, questionArray]);
+export const HeaderQuestionier = ({ question, activeQuestion }) => {
   return (
     <header className="header">
       <div className="header_top container d-flex justify-content-between px-3 py-3">
@@ -31,9 +15,9 @@ export const HeaderQuestionier = ({ questionArray, activeQuestion }) => {
           </p>
           <div className="questions d-flex align-items-center">
             <div className="question-no">
-              <p className="question-digit m-0">{`${activeQuestion}/5`}</p>
+              <p className="question-digit m-0">{`${activeQuestion + 1}/5`}</p>
             </div>
-            <p className="who-will-win m-0">{question}</p>
+            <p className="who-will-win m-0">{question.question}</p>
           </div>
         </div>
         <div className="cross-cancel">

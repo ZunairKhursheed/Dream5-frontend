@@ -26,11 +26,13 @@ const secondQuestion = [
 
 export const SecondQuestionierCard = ({
   setActiveQuestion,
-  questionArray,
-  setQuestionArray,
+  setAnswers,
+  answers,
+  question,
+  activeQuestion,
+  onSubmit,
 }) => {
   const [activeTab, setActiveTab] = useState("all");
-  console.log(questionArray?.length >= 2 && questionArray[1]["name"]);
   return (
     <>
       <div className="header-bottom container p-0 d-flex cursor_pointer">
@@ -77,25 +79,23 @@ export const SecondQuestionierCard = ({
       </div>
       <div className="app-content second__app__content mt-5">
         <div className="container">
-          {secondQuestion?.map((item, i) => (
+          {question.options?.map((item, i) => (
             <div
               className={`player-card d-flex align-items-center justify-content-center px-2 cursor_pointer ${
-                questionArray?.length >= 2 &&
-                questionArray[1]["name"] == item?.name
-                  ? "active"
-                  : ""
+                answers.answer == item?.name ? "active" : ""
               }`}
               key={item?.name + i}
               onClick={() => {
-                let returnItem = { question: 2, name: item?.name };
-                if (questionArray?.length > 1) {
-                  let array = [...questionArray];
-                  array.splice(1, 1, returnItem);
-                  setQuestionArray(array);
-                } else {
-                  let array = [...questionArray];
-                  array.push(returnItem);
-                  setQuestionArray(array);
+                setAnswers((current) => {
+                  let newArray = [...current];
+                  newArray[activeQuestion] = {
+                    ...newArray[activeQuestion],
+                    answer: item?.name,
+                  };
+                  return newArray;
+                });
+                if (activeQuestion != 4) {
+                  setActiveQuestion((current) => current + 1);
                 }
               }}
             >
@@ -118,12 +118,24 @@ export const SecondQuestionierCard = ({
           ))}
 
           <div className="previous-next d-flex justify-content-center p-4">
-            <div className="btn-previous" onClick={() => setActiveQuestion(1)}>
+            <div
+              className="btn-previous"
+              onClick={() => setActiveQuestion((current) => current - 1)}
+            >
               PREVIOUS
             </div>
-            <div className="btn-next" onClick={() => setActiveQuestion(3)}>
-              NEXT
-            </div>
+            {activeQuestion == 4 ? (
+              <div className="btn-next" onClick={onSubmit}>
+                Submit
+              </div>
+            ) : (
+              <div
+                className="btn-next"
+                onClick={() => setActiveQuestion((current) => current + 1)}
+              >
+                Next
+              </div>
+            )}
           </div>
         </div>
       </div>

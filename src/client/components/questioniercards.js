@@ -1,47 +1,27 @@
 "use client";
 
-const dataCountry = [
-  {
-    name: "India",
-    percent: "5%",
-    image: "/images/india.png",
-  },
-  {
-    name: "Australia",
-    percent: "5%",
-    image: "/images/austrailia.png",
-  },
-];
 export const QuestionierCards = ({
+  question,
   setActiveQuestion,
-  questionArray,
-  setQuestionArray,
+  setAnswers,
+  answers,
 }) => {
   return (
     <>
       <div className="container pt-150">
-        {dataCountry.map((item, i) => (
+        {question.options.map((item, i) => (
           <div
             className={`country-card d-flex align-items-center justify-content-center p-2 cursor_pointer ${
-              questionArray?.length > 0 &&
-              questionArray[0]["name"] == item?.name
-                ? "active"
-                : null
+              answers.answer == item?.name ? "active" : ""
             }`}
             key={i + item?.name}
             onClick={() => {
-              let returnItem = { question: 1, name: item?.name };
-              setActiveQuestion(2);
-              if (questionArray?.length > 0) {
-                let array = [...questionArray];
-                array.splice(0, 1, returnItem);
-                array.splice(1, 1);
-                setQuestionArray(array);
-              } else {
-                let array = [...questionArray];
-                array.push(returnItem);
-                setQuestionArray(array);
-              }
+              setAnswers((current) => {
+                let newArray = [...current];
+                newArray[0] = { ...newArray[0], answer: item?.name };
+                return newArray;
+              });
+              setActiveQuestion((current) => current + 1);
             }}
           >
             <div className="flag-img col-3">

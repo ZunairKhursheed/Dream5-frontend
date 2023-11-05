@@ -1,76 +1,60 @@
 "use client";
 
-import { FifthQuestionierCard } from "@/client/components/fifthQuestionCard";
-import { FourthQuestionierCard } from "@/client/components/fourthQuestionCard";
 import { HeaderQuestionier } from "@/client/components/headerQuestionier";
 import { HeaderSecond } from "@/client/components/headersecond";
 import { QuestionierCards } from "@/client/components/questioniercards";
 import { SecondQuestionierCard } from "@/client/components/secondQuestionierCard";
-import { ThirdQuestionierCard } from "@/client/components/thirdQuestionCard";
-import { useMemo, useState } from "react";
+import { questionData } from "@/data/questionData";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import "../../styles/pages/questionier.scss";
 
 export default function Questionier() {
-  const [activeQuestion, setActiveQuestion] = useState(1);
-  const [questionArray, setQuestionArray] = useState([]);
-  console.log(questionArray, questionArray.length);
-
-  const question = useMemo(() => {
-    switch (activeQuestion) {
-      case 1:
-        return (
-          <QuestionierCards
-            setActiveQuestion={setActiveQuestion}
-            setQuestionArray={setQuestionArray}
-            questionArray={questionArray}
-          />
-        );
-      case 2:
-        return (
-          <SecondQuestionierCard
-            setActiveQuestion={setActiveQuestion}
-            questionArray={questionArray}
-            setQuestionArray={setQuestionArray}
-          />
-        );
-      case 3:
-        return (
-          <ThirdQuestionierCard
-            setActiveQuestion={setActiveQuestion}
-            questionArray={questionArray}
-            setQuestionArray={setQuestionArray}
-          />
-        );
-      case 4:
-        return (
-          <FourthQuestionierCard
-            setActiveQuestion={setActiveQuestion}
-            questionArray={questionArray}
-            setQuestionArray={setQuestionArray}
-          />
-        );
-      case 5:
-        return (
-          <FifthQuestionierCard
-            setActiveQuestion={setActiveQuestion}
-            questionArray={questionArray}
-            setQuestionArray={setQuestionArray}
-          />
-        );
-      default:
-        break;
+  const [activeQuestion, setActiveQuestion] = useState(0);
+  const router = useRouter();
+  const [answers, setAnswers] = useState([
+    { question: questionData[0], answer: "" },
+    { question: questionData[1], answer: "" },
+    { question: questionData[2], answer: "" },
+    { question: questionData[3], answer: "" },
+    { question: questionData[4], answer: "" },
+  ]);
+  useEffect(() => {
+    const ans = JSON.parse(localStorage.getItem("answers"));
+    if (ans) {
+      setAnswers(ans);
     }
-  }, [activeQuestion, questionArray]);
-
+  }, []);
+  const onSubmit = () => {
+    console.log(answers);
+    localStorage.setItem("answers", JSON.stringify(answers));
+    router.push("/review");
+  };
   return (
     <main>
       <HeaderSecond />
       <div className="app-content">
         <HeaderQuestionier
-          questionArray={questionArray}
           activeQuestion={activeQuestion}
+          question={questionData[activeQuestion]}
         />
-        {question}
+        {activeQuestion == 0 ? (
+          <QuestionierCards
+            question={questionData[0]}
+            setActiveQuestion={setActiveQuestion}
+            answers={answers[0]}
+            setAnswers={setAnswers}
+          />
+        ) : (
+          <SecondQuestionierCard
+            question={questionData[activeQuestion]}
+            setActiveQuestion={setActiveQuestion}
+            answers={answers[activeQuestion]}
+            activeQuestion={activeQuestion}
+            setAnswers={setAnswers}
+            onSubmit={onSubmit}
+          />
+        )}
       </div>
     </main>
   );
