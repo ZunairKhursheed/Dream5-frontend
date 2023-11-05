@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
                     className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="icons/Home1.png"
+                      src="/Icons/Home1.png"
                       className="footer-btn-icon"
                       alt=""
                     />
