@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
                     className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="/icons/Home1.png"
+                      src="icons/Home1.png"
                       className="footer-btn-icon"
                       alt=""
                     />
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                     className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="/icons/My Matches.png"
+                      src="/icons/MyMatches.png"
                       className="footer-btn-icon-1"
                       alt=""
                     />
