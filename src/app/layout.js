@@ -1,10 +1,9 @@
-import { Inter } from "next/font/google";
 // import "@/styles/layout.css";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "@/styles/global.scss";
 import Link from "next/link";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
                     className="d-flex flex-column align-items-center footer-link"
                   >
                     <img
-                      src="/icons/Home 1.png"
+                      src="/icons/Home1.png"
                       className="footer-btn-icon"
                       alt=""
                     />
