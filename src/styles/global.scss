@@ -154,6 +154,9 @@ a {
     width: 100%;
   }
 }
+.cursor_pointer {
+  cursor: pointer;
+}
 
 .home_slider.slick-slider .slick-track,
 .home_slider.slick-slider .slick-list {
@@ -185,7 +188,9 @@ a {
   padding-block: 5px;
   font-weight: 600;
 }
-
+.header_tab_new.active {
+  background-color: var(--bg-active-tab);
+}
 .hbResults {
   padding-top: 64px;
 }

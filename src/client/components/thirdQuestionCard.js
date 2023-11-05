@@ -1,7 +1,6 @@
 "use client";
-import { useState } from "react";
 
-const secondQuestion = [
+const ThirdQuestion = [
   {
     name: "Rohit Sharma",
     percent: "5%",
@@ -18,79 +17,34 @@ const secondQuestion = [
     image: "/images/rohit-removebg-preview.png",
   },
   {
-    name: "Shami",
+    name: "Gill",
     percent: "5%",
     image: "/images/rohit-removebg-preview.png",
   },
 ];
-
-export const SecondQuestionierCard = ({
+export const ThirdQuestionierCard = ({
   setActiveQuestion,
   questionArray,
   setQuestionArray,
 }) => {
-  const [activeTab, setActiveTab] = useState("all");
-  console.log(questionArray?.length >= 2 && questionArray[1]["name"]);
   return (
-    <>
-      <div className="header-bottom container p-0 d-flex cursor_pointer">
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "all" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("all")}
-        >
-          ALL
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "wk" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("wk")}
-        >
-          WK
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "bat" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("bat")}
-        >
-          BAT
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "ar" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("ar")}
-        >
-          AR
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "bowl" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("bowl")}
-        >
-          BOWL
-        </div>
-      </div>
+    <div>
       <div className="app-content second__app__content mt-5">
         <div className="container">
-          {secondQuestion?.map((item, i) => (
+          {ThirdQuestion?.map((item, i) => (
             <div
               className={`player-card d-flex align-items-center justify-content-center px-2 cursor_pointer ${
-                questionArray?.length >= 2 &&
-                questionArray[1]["name"] == item?.name
+                questionArray?.length > 2 &&
+                questionArray[2]["name"] == item?.name
                   ? "active"
                   : ""
               }`}
               key={item?.name + i}
               onClick={() => {
-                let returnItem = { question: 2, name: item?.name };
-                if (questionArray?.length > 1) {
+                let returnItem = { question: 3, name: item?.name };
+                if (questionArray?.length > 2) {
                   let array = [...questionArray];
-                  array.splice(1, 1, returnItem);
+                  array.splice(2, 1, returnItem);
                   setQuestionArray(array);
                 } else {
                   let array = [...questionArray];
@@ -118,15 +72,15 @@ export const SecondQuestionierCard = ({
           ))}
 
           <div className="previous-next d-flex justify-content-center p-4">
-            <div className="btn-previous" onClick={() => setActiveQuestion(1)}>
+            <div className="btn-previous" onClick={() => setActiveQuestion(2)}>
               PREVIOUS
             </div>
-            <div className="btn-next" onClick={() => setActiveQuestion(3)}>
+            <div className="btn-next" onClick={() => setActiveQuestion(4)}>
               NEXT
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

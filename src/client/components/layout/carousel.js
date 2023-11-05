@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
 import Slider from "react-slick";
-
-import style from "@/styles/layout/carousel.module.scss";
+import { Upcoming } from "./upcoming";
 
 export const Teamcarousel = () => {
   const settings = {
@@ -13,16 +11,19 @@ export const Teamcarousel = () => {
     variableWidth: true,
   };
   return (
-    <div className="main_content">
-      <div className="container overflow-hidden">
-        <Slider {...settings} className="home_slider">
-          {[1, 2, 3, 4, 5].map((data) => (
-            <div key={data + "homeSlider"} className="home_slider-img">
-              <img src="/images/team-pic.png" alt="" />
-            </div>
-          ))}
-        </Slider>
+    <>
+      <div className="main_content">
+        <div className="container overflow-hidden">
+          <Slider {...settings} className="home_slider">
+            {[1, 2, 3, 4, 5].map((data) => (
+              <div key={data + "homeSlider"} className="home_slider-img">
+                <img src="/images/team-pic.png" alt="" />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
+      <Upcoming />
+    </>
   );
 };

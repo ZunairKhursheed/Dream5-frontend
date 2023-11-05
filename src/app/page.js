@@ -1,22 +1,32 @@
 "use client";
+import { Teamcarousel } from "@/client/components/layout/carousel";
 import { Header } from "@/client/components/layout/header";
 import { Topbanner } from "@/client/components/topbanner";
-import { Teamcarousel } from "@/client/components/layout/carousel";
-import { Upcoming } from "@/client/components/layout/upcoming";
-import { Vscard } from "@/client/components/cards/vsCards";
-import { VscardNoAdd } from "@/client/components/cards/vsCardNoAdd";
+import { useState } from "react";
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState("cricket");
+
+  function handleTabs() {
+    switch (activeTab) {
+      case "cricket":
+        return <Teamcarousel />;
+
+      case "football":
+        return <Teamcarousel />;
+
+      case "kabaddi":
+        return <Teamcarousel />;
+      default:
+        break;
+    }
+  }
   return (
     <main>
-      <Header />
+      <Header setActiveTab={setActiveTab} activeTab={activeTab} />
       <div className="app-content">
         <Topbanner />
-        <Teamcarousel />
-        <Upcoming />
-        <Vscard />
-        <VscardNoAdd />
-        <Vscard />
+        {handleTabs()}
       </div>
     </main>
   );

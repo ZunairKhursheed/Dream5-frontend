@@ -24,7 +24,9 @@
 .player-card.active {
   background-color: var(--card-active);
 }
-
+.country-card.active {
+  background-color: var(--card-active);
+}
 .player-img img {
   width: 60px;
   margin-top: -10px;
