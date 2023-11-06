@@ -130,7 +130,7 @@ a {
 
 .app-content {
   padding-bottom: 66px !important;
-  padding-top: 63px !important;
+  padding-top: 90px !important;
 }
 
 .pt-120 {
@@ -163,6 +163,7 @@ a {
   max-height: 115px;
 }
 .slick-slide {
+  min-width: 360px;
 }
 .header {
   position: fixed;
