@@ -7,27 +7,21 @@
 //   }
 // }
 
-
-
-
-
 .header_text_size {
-font-size: 18px;
-font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .site_logo {
-width: 81px;
+  width: 92px;
 }
 
 .header_tab_new {
-font-size: 16px;
-font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .header_tab.active,
 .header_tab_new.active {
   background-color: var(--bg-active-tab);
 }
-
-

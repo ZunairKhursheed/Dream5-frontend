@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <Header setActiveTab={setActiveTab} activeTab={activeTab} />
       <div className="app-content">
-        <Topbanner />
+        {/* <Topbanner /> */}
         {handleTabs()}
       </div>
     </main>

@@ -130,11 +130,11 @@ a {
 
 .app-content {
   padding-bottom: 66px !important;
-  padding-top: 90px !important;
+  padding-top: 63px !important;
 }
 
-.pt-150 {
-  padding-top: 150px !important;
+.pt-120 {
+  padding-top: 120px !important;
 }
 
 // #home_slider .slick-prev:before,
@@ -160,7 +160,9 @@ a {
 
 .home_slider.slick-slider .slick-track,
 .home_slider.slick-slider .slick-list {
-  max-height: 100px;
+  max-height: 115px;
+}
+.slick-slide {
 }
 .header {
   position: fixed;
@@ -210,7 +212,6 @@ a {
 }
 
 .slick-slide {
-  max-width: 313px;
   border-radius: 10px;
 }
 

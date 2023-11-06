@@ -9,11 +9,12 @@ export const Teamcarousel = () => {
     autoplaySpeed: 2000,
     infinite: true,
     variableWidth: true,
+    centerPadding: "30px",
   };
   return (
     <>
       <div className="main_content">
-        <div className="container overflow-hidden">
+        <div className="container overflow-hidden p-0">
           <Slider {...settings} className="home_slider">
             {[1, 2, 3, 4, 5].map((data) => (
               <div key={data + "homeSlider"} className="home_slider-img">

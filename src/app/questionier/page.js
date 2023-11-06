@@ -42,6 +42,7 @@ export default function Questionier() {
           <QuestionierCards
             question={questionData[0]}
             setActiveQuestion={setActiveQuestion}
+            activeQuestion={activeQuestion}
             answers={answers[0]}
             setAnswers={setAnswers}
           />

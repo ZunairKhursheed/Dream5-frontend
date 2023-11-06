@@ -79,6 +79,14 @@ export const SecondQuestionierCard = ({
       </div>
       <div className="app-content second__app__content mt-5">
         <div className="container">
+          <div className="questions d-flex align-items-center">
+            <div className="question-no">
+              <p className="question-digit m-0 text-white">{`${
+                activeQuestion + 1
+              }/5`}</p>
+            </div>
+            <p className="who-will-win m-0">{question.question}</p>
+          </div>
           {question.options?.map((item, i) => (
             <div
               className={`player-card d-flex align-items-center justify-content-center px-2 cursor_pointer ${
@@ -94,9 +102,9 @@ export const SecondQuestionierCard = ({
                   };
                   return newArray;
                 });
-                if (activeQuestion != 4) {
-                  setActiveQuestion((current) => current + 1);
-                }
+                // if (activeQuestion != 4) {
+                //   setActiveQuestion((current) => current + 1);
+                // }
               }}
             >
               <div className="player-img col-3">
@@ -118,23 +126,28 @@ export const SecondQuestionierCard = ({
           ))}
 
           <div className="previous-next d-flex justify-content-center p-4">
-            <div
+            <button
               className="btn-previous"
               onClick={() => setActiveQuestion((current) => current - 1)}
             >
               PREVIOUS
-            </div>
+            </button>
             {activeQuestion == 4 ? (
-              <div className="btn-next" onClick={onSubmit}>
+              <button
+                disabled={!answers.answer}
+                className={`${!answers.answer ? "disabled" : ""} btn-next`}
+                onClick={onSubmit}
+              >
                 Submit
-              </div>
+              </button>
             ) : (
-              <div
-                className="btn-next"
+              <button
+                disabled={!answers.answer}
+                className={`${!answers.answer ? "disabled" : ""} btn-next`}
                 onClick={() => setActiveQuestion((current) => current + 1)}
               >
                 Next
-              </div>
+              </button>
             )}
           </div>
         </div>

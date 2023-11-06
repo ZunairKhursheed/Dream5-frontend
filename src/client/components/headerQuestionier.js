@@ -13,12 +13,6 @@ export const HeaderQuestionier = ({ question, activeQuestion }) => {
             <span className="hour">23</span>h:<span className="mins">34</span>m
             left
           </p>
-          <div className="questions d-flex align-items-center">
-            <div className="question-no">
-              <p className="question-digit m-0">{`${activeQuestion + 1}/5`}</p>
-            </div>
-            <p className="who-will-win m-0">{question.question}</p>
-          </div>
         </div>
         <div className="cross-cancel">
           <i className="fa-solid fa-xmark"></i>
