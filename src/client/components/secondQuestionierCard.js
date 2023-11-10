@@ -59,9 +59,9 @@ export const SecondQuestionierCard = ({
                   };
                   return newArray;
                 });
-                if (activeQuestion != 4) {
-                  setActiveQuestion((current) => current + 1);
-                }
+                // if (activeQuestion != 4) {
+                //   setActiveQuestion((current) => current + 1);
+                // }
               }}
             >
               <div className="player-img col-3">
