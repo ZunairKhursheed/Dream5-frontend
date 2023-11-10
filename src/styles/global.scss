@@ -349,3 +349,12 @@ a {
     font-size: 10px;
   }
 }
+.grid {
+  display: grid;
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}

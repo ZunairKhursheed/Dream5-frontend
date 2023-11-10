@@ -1,6 +1,7 @@
 "use client";
 import { Teamcarousel } from "@/client/components/layout/carousel";
 import { Header } from "@/client/components/layout/header";
+import { Upcoming } from "@/client/components/layout/upcoming";
 import { Topbanner } from "@/client/components/topbanner";
 import { useState } from "react";
 
@@ -27,6 +28,8 @@ export default function Home() {
       <div className="app-content">
         {/* <Topbanner /> */}
         {handleTabs()}
+
+        <Upcoming />
       </div>
     </main>
   );

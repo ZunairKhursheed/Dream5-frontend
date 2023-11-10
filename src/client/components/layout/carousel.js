@@ -1,6 +1,5 @@
 "use client";
 import Slider from "react-slick";
-import { Upcoming } from "./upcoming";
 
 export const Teamcarousel = () => {
   const settings = {
@@ -24,7 +23,6 @@ export const Teamcarousel = () => {
           </Slider>
         </div>
       </div>
-      <Upcoming />
     </>
   );
 };

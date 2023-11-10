@@ -1,32 +1,34 @@
 import React from "react";
 
-import style from "@/styles/vscard.scss"
-
+import style from "@/styles/vscard.scss";
+import Link from "next/link";
 
 export const VscardNoAdd = () => {
   return (
     <div className="container">
-      <div className="match-card">
-        <p className="match-card-heading">
-          9th ODI, Rajhib Ghandi Stadium, Hyderabad, India
-        </p>
-        <div className="vs d-flex justify-content-between align-items-center">
-          <div className="team">
-            <img src="/images/india.png" alt="" />
-            <p className="card-team-name">India</p>
+      <Link href={"/results"}>
+        <div className="match-card">
+          <p className="match-card-heading">
+            9th ODI, Rajhib Ghandi Stadium, Hyderabad, India
+          </p>
+          <div className="vs d-flex justify-content-between align-items-center">
+            <div className="team">
+              <img src="/images/india.png" alt="" />
+              <p className="card-team-name">India</p>
+            </div>
+            <div className="time">
+              <p className="start-in">Starts in</p>
+              <p className="time-left">
+                <span className="hour">02</span>h:
+                <span className="mins">02</span>m
+              </p>
+            </div>
+            <div className="team">
+              <img src="/images/Afghanistan.png" alt="" />
+              <p className="card-team-name">Afghanistan</p>
+            </div>
           </div>
-          <div className="time">
-            <p className="start-in">Starts in</p>
-            <p className="time-left">
-              <span className="hour">02</span>h:<span className="mins">02</span>m
-            </p>
-          </div>
-          <div className="team">
-            <img src="/images/Afghanistan.png" alt="" />
-            <p className="card-team-name">Afghanistan</p>
-          </div>
-        </div>
-        {/* <div className="add">
+          {/* <div className="add">
           <div className="d-flex flex-row align-items-center">
             <div className="col">
               <p className="add-txt win">Win Guaranteed</p>
@@ -39,13 +41,8 @@ export const VscardNoAdd = () => {
             </div>
           </div>
         </div> */}
-      </div>
+        </div>
+      </Link>
     </div>
-    
-
-
-
-    
-  
   );
 };

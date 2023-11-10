@@ -13,11 +13,11 @@ export const HeaderBottomResults = ({ activeTab, setActiveTab }) => {
       </div>
       <div
         className={`col header_tab_new d-flex justify-content-center align-items-center ${
-          activeTab == "mycontests" ? "active" : null
+          activeTab == "leaderboard" ? "active" : null
         }`}
-        onClick={() => setActiveTab("mycontests")}
+        onClick={() => setActiveTab("leaderboard")}
       >
-        MY contests
+        Leaderboard
       </div>
       <div
         className={`col header_tab_new d-flex justify-content-center align-items-center ${
