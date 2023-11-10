@@ -9,18 +9,18 @@ export const Pick = () => {
       <div className="pick-main my-3">
         <div className="pick-header d-flex justify-content-between">
           <p className="pick-header-text mb-0">Username P1</p>
-          <div className="d-flex gap-2">
+          <div className="d-flex gap-1">
             <Link
               href={"/questionier"}
               className="pick-header-text mb-0 text-white pe-2"
             >
-              EDIT
+              <i className="fas fa-pen"></i>
             </Link>
             <Link
               href={"/questionier"}
               className="pick-header-text mb-0 text-white pe-2"
             >
-              EDIT
+              <i className="fas fa-share"></i>
             </Link>
           </div>
         </div>
