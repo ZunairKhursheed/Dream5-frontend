@@ -33,7 +33,10 @@ export default function Questionier() {
   };
   return (
     <main>
-      <HeaderSecond>
+      <HeaderSecond
+        setActiveQuestion={setActiveQuestion}
+        activeQuestion={activeQuestion}
+      >
         {" "}
         {activeQuestion != 0 && (
           <div className="header-bottom container p-0 d-flex cursor_pointer">

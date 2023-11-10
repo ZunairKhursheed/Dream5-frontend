@@ -102,6 +102,13 @@
 }
 .previous-next {
   gap: 10px;
+  width: 100%;
+  background: var(--bg-body);
+  position: fixed;
+  bottom: 52px;
+  left: 0;
+  right: 0;
+  padding: 10px !important;
 }
 .btn,
 .btn-previous,
