@@ -32,51 +32,8 @@ export const SecondQuestionierCard = ({
   activeQuestion,
   onSubmit,
 }) => {
-  const [activeTab, setActiveTab] = useState("all");
   return (
     <>
-      <div className="header-bottom container p-0 d-flex cursor_pointer">
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "all" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("all")}
-        >
-          ALL
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "wk" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("wk")}
-        >
-          WK
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "bat" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("bat")}
-        >
-          BAT
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "ar" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("ar")}
-        >
-          AR
-        </div>
-        <div
-          className={`col header-tab d-flex justify-content-center align-items-center ${
-            activeTab == "bowl" ? "active" : null
-          }`}
-          onClick={() => setActiveTab("bowl")}
-        >
-          BOWL
-        </div>
-      </div>
       <div className="app-content second__app__content mt-5">
         <div className="container">
           <div className="questions d-flex align-items-center">
@@ -102,9 +59,9 @@ export const SecondQuestionierCard = ({
                   };
                   return newArray;
                 });
-                // if (activeQuestion != 4) {
-                //   setActiveQuestion((current) => current + 1);
-                // }
+                if (activeQuestion != 4) {
+                  setActiveQuestion((current) => current + 1);
+                }
               }}
             >
               <div className="player-img col-3">

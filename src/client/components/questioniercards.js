@@ -30,7 +30,7 @@ export const QuestionierCards = ({
                 newArray[0] = { ...newArray[0], answer: item?.name };
                 return newArray;
               });
-              // setActiveQuestion((current) => current + 1);
+              setActiveQuestion((current) => current + 1);
             }}
           >
             <div className="flag-img col-3">
