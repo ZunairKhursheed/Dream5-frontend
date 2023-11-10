@@ -37,6 +37,46 @@ export const questionData = [
         percent: "5%",
         image: "/images/rohit-removebg-preview.png",
       },
+      {
+        name: "Dhoni",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Shami",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Dhoni",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Shami",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Dhoni",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Shami",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Dhoni",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
+      {
+        name: "Shami",
+        percent: "5%",
+        image: "/images/rohit-removebg-preview.png",
+      },
     ],
   },
 
