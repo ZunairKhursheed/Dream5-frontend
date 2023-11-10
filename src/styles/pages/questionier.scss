@@ -3,8 +3,10 @@
   justify-content: center;
   margin-bottom: 20px;
   position: sticky;
-  top: 100px;
+  top: 95px;
   background: var(--bg-body);
+  z-index: 10;
+  padding-block: 5px;
 }
 
 .question-no {
