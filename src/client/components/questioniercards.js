@@ -9,7 +9,7 @@ export const QuestionierCards = ({
 }) => {
   return (
     <>
-      <div className="container pt-120">
+      <div className="container pt-5">
         <div className="questions d-flex align-items-center">
           <div className="question-no">
             <p className="question-digit m-0 text-white">{`${
