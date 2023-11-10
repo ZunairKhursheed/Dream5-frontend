@@ -2,6 +2,9 @@
   gap: 10px;
   justify-content: center;
   margin-bottom: 20px;
+  position: sticky;
+  top: 100px;
+  background: var(--bg-body);
 }
 
 .question-no {
